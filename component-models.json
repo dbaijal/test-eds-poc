@@ -231,7 +231,23 @@
            "name": "author",
            "label": "Author",
            "value": ""
-         }
+         },
+         {
+           "component": "boolean",
+           "label": "Show quote as Heading",
+           "name": "isQuoteHeading",
+           "valueType": "boolean"
+         },
+         {
+          "component": "select",
+          "label": "Heading Type",
+          "name": "headingType",
+          "valueType": "string",
+          "options": [
+            { "name": "H1", "value": "h1" },
+            { "name": "H2", "value": "h2" }
+          ]
+        }
        ]
   }
 ]
