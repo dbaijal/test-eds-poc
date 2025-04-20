@@ -184,12 +184,34 @@
                 "template": {
                   "name": "Article Cards",
                   "filter": "article-cards",
-                  "model": "article-cards"
-                }
+                  "model": "article-cards",
+                  "text": "Testing",
+                  "item1": {
+                    "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                    "name": "Article Card",
+                    "model": "article-card",
+                    "mini-card-image": "/content/dam/aem-eds-poc/peak-performance.png",
+                    "mini-card-text": "Article Card 1"
+                },
+                "item2": {
+                  "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                    "name": "Article Card",
+                    "model": "article-card",
+                    "mini-card-image": "/content/dam/aem-eds-poc/peak-performance.png",
+                    "mini-card-text": "Article Card 2"
+              },
+              "item3": {
+               "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                    "name": "Article Card",
+                    "model": "article-card",
+                    "mini-card-image": "/content/dam/aem-eds-poc/peak-performance.png",
+                    "mini-card-text": "Article Card 3"   
               }
             }
           }
-        },
+        }
+        }
+      },
         {
           "title": "Article Card",
           "id": "article-card",
