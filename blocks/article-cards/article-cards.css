@@ -9,7 +9,7 @@
   margin-bottom: 32px;
 }
 
-.article-cards.block .article-cards-container {
+.article-cards.block .article-card-container { /* changed */
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -24,26 +24,26 @@
   background-color: #fff;
   border-top: 2px solid #ccc;
   padding: 16px 0;
-  flex: 1 1 calc(33.333% - 24px); /* 3 cards per row */
+  flex: 1 1 calc(33.333% - 24px);
   box-sizing: border-box;
 }
 
-.article-cards.block .article-card-title {
+.article-cards.block .mini-card-text { /* changed */
   font-size: 18px;
   font-weight: 600;
   color: #003366;
   max-width: 60%;
 }
 
-.article-cards.block .article-card-title p {
+.article-cards.block .mini-card-text p { /* changed */
   margin: 0;
 }
 
-.article-cards.block .article-card-image {
+.article-cards.block .mini-card-image { /* changed */
   max-width: 35%;
 }
 
-.article-cards.block .article-card-image img {
+.article-cards.block .mini-card-image img { /* changed */
   width: 100%;
   height: auto;
   border-radius: 4px;
@@ -53,7 +53,7 @@
 /* === Responsive layout === */
 @media screen and (max-width: 1024px) {
   .article-cards.block .article-card {
-    flex: 1 1 calc(50% - 24px); /* 2 cards per row */
+    flex: 1 1 calc(50% - 24px);
   }
 }
 
@@ -63,12 +63,12 @@
     flex: 1 1 100%;
   }
 
-  .article-cards.block .article-card-title,
-  .article-cards.block .article-card-image {
+  .article-cards.block .mini-card-text,
+  .article-cards.block .mini-card-image {
     max-width: 100%;
   }
 
-  .article-cards.block .article-card-title {
+  .article-cards.block .mini-card-text {
     margin-bottom: 12px;
   }
 }

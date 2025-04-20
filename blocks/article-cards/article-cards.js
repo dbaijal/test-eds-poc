@@ -6,7 +6,7 @@ export default function decorate(block) {
   }
 
   const container = document.createElement('div');
-  container.className = 'article-cards-container';
+  container.className = 'article-card-container'; // changed
 
   cards.forEach((cardRow) => {
     const card = document.createElement('div');
@@ -15,14 +15,14 @@ export default function decorate(block) {
     const [imageWrapper, titleWrapper] = cardRow.children;
 
     const cardImage = document.createElement('div');
-    cardImage.className = 'article-card-image';
+    cardImage.className = 'mini-card-image'; // changed
     cardImage.append(imageWrapper.querySelector('picture'));
 
-    const cardTitle = document.createElement('div');
-    cardTitle.className = 'article-card-title';
-    cardTitle.append(titleWrapper.querySelector('p'));
+    const cardText = document.createElement('div');
+    cardText.className = 'mini-card-text'; // changed
+    cardText.append(titleWrapper.querySelector('p'));
 
-    card.append(cardTitle, cardImage);
+    card.append(cardText, cardImage);
     container.append(card);
   });
 
