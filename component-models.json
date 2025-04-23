@@ -281,5 +281,26 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "cf-content",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cfText",
+        "value": "",
+        "label": "CF Text"
+      },
+      {
+        "component": "aem-content-fragment",
+        "name": "picker",
+        "label": "Content Fragment Picker",
+        "valueType": "string",
+        "validation": {
+            "rootPath": "/content/dam/aem-eds-poc/content-fragments"
+        }
+       }
+    ]
   }
 ]
