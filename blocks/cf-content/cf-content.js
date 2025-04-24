@@ -8,7 +8,7 @@ export default async function decorate(block) {
   .then((response) => response.json())
   .then((contentfragment) => {
     // Directly extract the item object from the response
-    const item = contentfragment?.data?.articleByPath?.item;
+    const item = contentfragment?.data?.articleinfoByPath?.item;
     return item || null;
   });
   block.innerHTML = ``;
