@@ -1,7 +1,7 @@
 export default async function decorate(block) {
-    const aempublishurl = 'https://author-p99952-e1559416.adobeaemcloud.com';
+    const aempublishurl = 'https://author-p118103-e1621695.adobeaemcloud.com';
     const persistedquery = '/graphql/execute.json/aem-eds-poc/articleInformation';
-    const contentPath = '/content/dam/aem-eds-poc/content-fragments/article-1';
+    const contentPath = '/content/dam/aem-eds-poc/content-fragment/article1';
     const url = `${aempublishurl}${persistedquery};path=${contentPath}`;
     const options = { credentials: 'include'};
     const cfReq = await fetch(url, options)
