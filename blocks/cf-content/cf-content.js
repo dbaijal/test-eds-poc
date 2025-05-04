@@ -1,8 +1,8 @@
-/*export default async function decorate(block) {
-    const aempublishurl = 'https://author-p118103-e1621695.adobeaemcloud.com';
+export default async function decorate(block) {
+    const aempublishurl = 'https://publish-p99952-e1559416.adobeaemcloud.com';
     const persistedquery = '/graphql/execute.json/aem-eds-poc/articleInformation';
-    //const contentPath = '/content/dam/aem-eds-poc/content-fragment/article1';
-    const contentPath = block.querySelector(':scope div:nth-child(2) > div a')?.textContent?.trim();
+    const contentPath = '/content/dam/aem-eds-poc/content-fragments/article-1';
+   // const contentPath = block.querySelector(':scope div:nth-child(2) > div a')?.textContent?.trim();
     const url = `${aempublishurl}${persistedquery};path=${contentPath}`;
     const options = { credentials: 'include'};
     const cfReq = await fetch(url, options)
@@ -16,8 +16,8 @@
   block.innerHTML = `${
     cfReq?.articleItem
   }`;
-} */
-
+} 
+/*
   export default async function decorate(block) {
     const aempublishurl = 'https://author-p118103-e1621695.adobeaemcloud.com';
     const persistedquery = '/graphql/execute.json/aem-eds-poc/articleInformation';
@@ -51,4 +51,4 @@
       block.innerHTML = `<p>Failed to load content fragment.</p>`;
     }
   }
-  
+  */
